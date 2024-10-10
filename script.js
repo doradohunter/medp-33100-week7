@@ -37,7 +37,6 @@ function spoke() {
             return response.json();
         })
         .then(data => {
-            // console.log(data.verses);
             const holySpeechElement =  document.querySelector('.holySpeech') 
             for (let i = 0; i < data.verses.length; i++){
                 const speechElement = document.createElement('div');
