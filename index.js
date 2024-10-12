@@ -19,7 +19,7 @@ async function getJoke() {
   try {
     return response;
   } catch {
-    throw new Error('no response');
+    return 'no response';
   }
 }
 
@@ -32,5 +32,5 @@ getJoke()
     console.log(createJoke.punchline);
   })
   .catch((error) => {
-    console.log(error);
+    throw new Error(error);
   });
