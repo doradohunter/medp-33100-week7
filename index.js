@@ -24,10 +24,14 @@ async function getJoke() {
 }
 
 function displayJoke() {
+  const jokeContainer = document.getElementById('all-joke-container');
+
   getJoke().then((data) => {
     data.forEach((each) => {
+      const div = document.createElement('div');
       const newJoke = new Jokes(each.type, each.setup, each.punchline);
-      console.log(newJoke.setup);
+
+      jokeContainer.appendChild(div);
     });
   });
 }
