@@ -23,6 +23,8 @@ async function getJoke() {
   }
 }
 
+const jokeId = ['type', 'setup', 'punchline'];
+
 function jokeDivs() {
   const typeDiv = document.createElement('div');
   const setupDiv = document.createElement('div');
@@ -34,15 +36,26 @@ function jokeDivs() {
 function displayJoke() {
   const jokeContainer = document.getElementById('all-joke-container');
 
+  jokeContainer.textContent = 'loading';
+
   getJoke().then((data) => {
+    jokeContainer.textContent = '';
     data.forEach((each) => {
       const div = document.createElement('div');
       const newJoke = new Jokes(each.type, each.setup, each.punchline);
-
       jokeContainer.appendChild(div);
 
       for (let i = 0; i < 3; i++) {
-        div.appendChild(Object.entries(jokeDivs())[i][1]);
+        const jokeArray = Object.entries(jokeDivs());
+        jokeArray[i][1].classList.add(jokeId[i]);
+
+        i == 0
+          ? (jokeArray[i][1].textContent = newJoke.announceType())
+          : i == 1
+          ? (jokeArray[i][1].textContent = newJoke.setup)
+          : (jokeArray[i][1].textContent = newJoke.punchline);
+
+        div.appendChild(jokeArray[i][1]);
       }
     });
   });
