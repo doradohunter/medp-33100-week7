@@ -59,7 +59,6 @@ class Book {
     }
 }
 
-
 /* 
 Part 2: Encapsulation
 
