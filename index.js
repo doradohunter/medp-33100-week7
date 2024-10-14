@@ -23,6 +23,14 @@ async function getJoke() {
   }
 }
 
+function jokeDivs() {
+  const typeDiv = document.createElement('div');
+  const setupDiv = document.createElement('div');
+  const punchlineDiv = document.createElement('div');
+
+  return { typeDiv, setupDiv, punchlineDiv };
+}
+
 function displayJoke() {
   const jokeContainer = document.getElementById('all-joke-container');
 
@@ -32,6 +40,10 @@ function displayJoke() {
       const newJoke = new Jokes(each.type, each.setup, each.punchline);
 
       jokeContainer.appendChild(div);
+
+      for (let i = 0; i < 3; i++) {
+        div.appendChild(Object.entries(jokeDivs())[i][1]);
+      }
     });
   });
 }
