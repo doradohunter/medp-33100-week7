@@ -1,0 +1,68 @@
+body{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 50px 200px;
+}
+.collection {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.title{
+    text-align: center;
+    font-style: oblique;
+}
+
+.character{
+    background-color: lightgrey;
+    padding: 15px;
+    width: 250px;
+}
+
+.name{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*class for each element/vision*/
+.anemo{
+    background-color: #63BAAD;
+}
+
+.geo{
+    background-color: goldenrod;
+}
+
+.electro{
+    background-color: #8142bb;
+    color: white;
+}
+
+.dendro{
+    background-color: #aae273;
+}
+
+.hydro{
+    background-color: #1e90ff;
+}
+
+.pyro{
+    background-color: #B22222;
+    color: white;
+}
+
+.cryo{
+    background-color: #B0C4DE;
+}
