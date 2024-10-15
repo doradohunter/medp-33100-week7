@@ -1,74 +1,71 @@
-/*
-    Part 5: Fetch the JSON data using fetch()
-*/
-
-function fetchData() {
-    return fetch('books.json')
-        .then((response) => {
-            console.log(response);
-            if (response.ok) {
-                return response.json();
-            }
-        })
-        .then((data) => {
-            return data;
-        })
-}
-
-
-// fetchData()
-//     .then((data) => {
-//         displayData(data);
-//     });
-
-
-/*
-    Part 6: Fetch data from Gutendex 
-*/
-
-class ExternalBook extends Book {
-    constructor(element, title, author, image) {
-        super(element, title, author);
-        this.image = image;
+class PhilosophyQuote {
+    constructor(element, quotation, author, type) {
+        this.element = element;
+        this.quotation = quotation;
+        this.author = author;
+        this.type = type;
     }
 
     renderElement() {
         this.element.innerHTML = '';
 
-        const titleElement = document.createElement('p');
-        titleElement.classList.add('book_title');
-        titleElement.innerText = this.title;
-        this.element.appendChild(titleElement);
+        const quoteElement = document.createElement('p');
+        quoteElement.classList.add('quote');
+        quoteElement.innerText = '"' + this.quotation + '"';
+        this.element.appendChild(quoteElement);
 
-        this.author.forEach(a => {
-            const authorElement = document.createElement('p');
-            authorElement.classList.add('book_author');
-            authorElement.innerText = 'By ' + a.name;
-            this.element.appendChild(authorElement);
-        });
-
-        this.element.style.backgroundImage = `url("${this.image}")`;
+        const authorElement = document.createElement('p');
+        authorElement.classList.add('author');
+        authorElement.innerText = '- ' + this.author;
+        this.element.appendChild(authorElement);
+        
     }
 }
 
-async function fetchGutendexData() {
-    const response = await fetch('https://gutendex.com/books/');
+async function fetchApiData() {
+    const response = await fetch('https://philosophy-quotes-api.glitch.me/quotes');
     if (response.ok) {
         const data = await response.json();
         console.log(data);
-        return data.results;
+        return data;
     }
     return [];
 }
 
-fetchGutendexData()
+fetchApiData()
     .then((data) => {
-        const library = document.querySelector('.library');
+        const slideshow = document.querySelector('.quote-slideshow');
+        let index = 0;
+        
+        function displayQuote(){
+            slideshow.innerHTML = '';
+            const quoteEl = document.createElement('div');
+            const quote = new PhilosophyQuote(quoteEl, data[index].quote, data[index].source, data[index].philosophy);
+            quote.renderElement();
+            slideshow.appendChild(quoteEl);
 
-        for (let i = 0; i < books.length; i++) {
-            const bookEl = document.createElement('div');
-            const book = new ExternalBook(bookEl, data[i].title, data[i].authors, data[i].formats['image/jpeg']);
-            book.renderElement();
-            library.appendChild(bookEl);
+            gsap.fromTo(quoteEl,{opacity: 0},{
+                opacity: 1, 
+                    duration: 2,
+                    onComplete: function (){
+                        if (index >= data.length){
+                            index = 0;
+                        }
+                        gsap.to(quoteEl, 
+                            {
+                                opacity: 0, 
+                                delay: 5, 
+                                duration: 2,
+                                onComplete: function(){
+                                    index++;
+                                    displayQuote();
+                                    
+                                }
+    
+                        });
+                    }
+            });
         }
-    })
+
+        displayQuote();
+    });
