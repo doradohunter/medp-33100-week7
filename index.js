@@ -14,7 +14,7 @@ async function getJoke() {
   const getJoke = await fetch(
     'https://official-joke-api.appspot.com/jokes/random/10'
   );
-  const response = getJoke.json();
+  const response = await getJoke.json();
 
   try {
     return response;
@@ -58,7 +58,61 @@ function displayJoke() {
         div.appendChild(jokeArray[i][1]);
       }
     });
+
+    // Set up GSAP animation after jokes are loaded
+    setupGSAPAnimation();
   });
+}
+
+function setupGSAPAnimation() {
+  const jokeElements = document.querySelectorAll('#all-joke-container > div');
+  let currentIndex = 0;
+
+  gsap.set(jokeElements, { opacity: 0, x: '100%' });
+  gsap.set(jokeElements[0], { opacity: 1, x: 0 });
+
+  function goToJoke(index) {
+    gsap.to(jokeElements[currentIndex], {
+      opacity: 0,
+      x: index > currentIndex ? '-100%' : '100%',
+      duration: 0.5,
+    });
+    gsap.fromTo(
+      jokeElements[index],
+      { opacity: 0, x: index > currentIndex ? '100%' : '-100%' },
+      { opacity: 1, x: 0, duration: 0.5 }
+    );
+
+    currentIndex = index;
+  }
+
+  function nextJoke() {
+    const nextIndex = (currentIndex + 1) % jokeElements.length;
+    goToJoke(nextIndex);
+  }
+
+  function prevJoke() {
+    const prevIndex =
+      (currentIndex - 1 + jokeElements.length) % jokeElements.length;
+    goToJoke(prevIndex);
+  }
+
+  // Create and append navigation buttons
+  const navContainer = document.createElement('div');
+  navContainer.className = 'joke-nav';
+
+  const prevButton = document.createElement('button');
+  prevButton.textContent = 'Previous';
+  prevButton.addEventListener('click', prevJoke);
+
+  const nextButton = document.createElement('button');
+  nextButton.textContent = 'Next';
+  nextButton.addEventListener('click', nextJoke);
+
+  navContainer.appendChild(prevButton);
+  navContainer.appendChild(nextButton);
+
+  document.body.appendChild(navContainer);
 }
 
 displayJoke();
