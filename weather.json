@@ -1,0 +1,25 @@
+[
+  {
+    "condition": "Clear",
+    "icon": "https://cdn-icons-png.flaticon.com/512/869/869869.png"
+  },
+  {
+    "condition": "Clouds",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1163/1163624.png"
+  },
+  {
+    "condition": "Rain",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1163/1163626.png"
+  },
+  {
+    "condition": "Tornado",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1163/1163670.png"
+  },
+  {
+    "condition": "Snow",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1163/1163629.png"
+  }
+] 
+
+  
+  
