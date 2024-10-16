@@ -1,0 +1,82 @@
+[
+  {
+    "philosopher": "Marcus Aurelius",
+    "image": "https://images.app.goo.gl/MYeoRWbN22Hdf5SJ7"
+  },
+  {
+    "philosopher": "Seneca",
+    "image": "https://images.app.goo.gl/RkgmUULbHKM8iqZu6"
+  },
+  {
+    "philosopher": "Epictetus",
+    "image": "https://images.app.goo.gl/exKwmStzsBPaH2CR7"
+  },
+  {
+    "philosopher": "Alan Watts",
+    "image": "https://images.app.goo.gl/dqybuXi4RDGeG8MS8"
+  },
+  {
+    "philosopher": "Rumi",
+    "image": "https://images.app.goo.gl/AjcgVQ5saWf4BNQC9"
+  },
+  {
+    "philosopher": "Carl G. Jung",
+    "image": "https://images.app.goo.gl/nts7FFSYEDDr45256"
+  },
+  {
+    "philosopher": "Friedrich Nietzsche",
+    "image": "https://images.app.goo.gl/9kFGq76bD1ydd8pP6"
+  },
+  {
+    "philosopher": "Jean-Paul Sartre",
+    "image": "https://images.app.goo.gl/6rc4yigDzQxbzXN17"
+  },
+  {
+    "philosopher": "Fyodor Dostoyevsky",
+    "image": "https://images.app.goo.gl/UMSABkwAtwe8Evkk9"
+  },
+  {
+    "philosopher": "Plato",
+    "image": "https://images.app.goo.gl/f3ZUDTHUxByJmFQM9"
+  },
+  {
+    "philosopher": "Aristotle",
+    "image": "https://images.app.goo.gl/qdvgLUPzpLyXZo2T6"
+  },
+  {
+    "philosopher": "Henry David Thoreau",
+    "image": "https://images.app.goo.gl/kXQDJw9Fx7EKoqBM8"
+  },
+  {
+    "philosopher": "Ralph Waldo Emerson",
+    "image": "https://images.app.goo.gl/7Qq3Zxpa4nx1BsvT8"
+  },
+  {
+    "philosopher": "Christopher McCandless",
+    "image": "https://images.app.goo.gl/6oThMUb11TKGh6kk8"
+  },
+  {
+    "philosopher": "René Descartes",
+    "image": "https://images.app.goo.gl/H3156QYdBaqjo5WS8"
+  },
+  {
+    "philosopher": "Baruch Spinoza",
+    "image": "https://images.app.goo.gl/ZH2NT9wNkDo3C57S9"
+  },
+  {
+    "philosopher": "Leibniz",
+    "image": "https://images.app.goo.gl/pbeHf64v86Z7Secs5"
+  },
+  {
+    "philosopher": "John Locke",
+    "image": "https://images.app.goo.gl/8hwsNdmBTa2GZrq56"
+  },
+  {
+    "philosopher": "George Berkeley",
+    "image": "https://images.app.goo.gl/tZZun4ZPmYLE3Tme9"
+  },
+  {
+    "philosopher": "David Hume",
+    "image": "https://images.app.goo.gl/4RfmSjwbugY1DjyR7"
+  }
+]
