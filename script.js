@@ -62,8 +62,12 @@ class Character{
 
         const visionElement = document.createElement('p');
         visionElement.classList.add('vision');
-        visionElement.innerText = 'Vision: ' + this.vision;
-
+        if (this.name == 'Neuvillette' || this.name == 'Traveler (Lumine/Aether)') {
+            visionElement.innerText = 'Element: ' + this.vision;
+        } else {
+            visionElement.innerText = 'Vision: ' + this.vision; 
+        }
+    
         const weaponElement = document.createElement('p');
         weaponElement.classList.add('weapon');
         weaponElement.innerText = 'Weapon: ' + this.weapon;
@@ -107,15 +111,5 @@ class Character{
     };
 };
 
-/*class for each element*/
-class Geo extends Character{
-    constructor(element, icon, name, rarity, vision, weapon, nation) {
-        super(element, icon, name, rarity, vision, weapon, nation);
-
-        this.element.classList.add('geo');
-    }
-}
-
 
 //const test = new Character (element1, 'test-image.jpg', 'Lottie', 5, 'Hydro', 'Claymore', 'Fontaine');
-
