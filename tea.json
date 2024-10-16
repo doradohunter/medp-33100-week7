@@ -1,0 +1,30 @@
+[
+    {
+      "name": "Black Tea",
+      "description": "Black tea is fully oxidized, giving it a dark color and rich, bold flavor. It has a higher caffeine content compared to other teas."
+    },
+    {
+      "name": "Green Tea",
+      "description": "Green tea is minimally oxidized, resulting in a light, grassy flavor. It is known for its high antioxidant content and potential health benefits."
+    },
+    {
+      "name": "Oolong Tea",
+      "description": "Oolong tea is partially oxidized, offering a flavor profile that falls between black and green tea. It can be floral, fruity, or toasty, depending on the level of oxidation."
+    },
+    {
+      "name": "White Tea",
+      "description": "White tea is the least processed of all teas, made from young leaves and buds. It has a delicate, subtle flavor and is rich in antioxidants."
+    },
+    {
+      "name": "Herbal Tea",
+      "description": "Herbal tea, also known as a tisane, is made from various herbs, flowers, and fruits. It is naturally caffeine-free and comes in a wide range of flavors."
+    },
+    {
+      "name": "Pu-erh Tea",
+      "description": "Pu-erh tea is a fermented tea with a deep, earthy flavor. It is aged over time and is often enjoyed for its rich, complex taste."
+    },
+    {
+      "name": "Matcha Tea",
+      "description": "Matcha is a type of powdered green tea, made from shade-grown tea leaves. It has a vibrant green color, a rich umami flavor, and is packed with antioxidants."
+    }
+  ]
