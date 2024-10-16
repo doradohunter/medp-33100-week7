@@ -5,7 +5,7 @@ class Weather {
     }
 
     //Sets up the box
-    createWeatherBox() {
+    WeatherBox() {
         const weatherBox = document.createElement('div');
         weatherBox.classList.add('weather-box');
         weatherBox.setAttribute('data-condition', this.condition);
@@ -25,72 +25,64 @@ class Weather {
         return weatherBox;
     }
 
+    //Add hover effects
     HoverEffects(weatherBox) {
         const icon = weatherBox.querySelector('img');
-
+    
         weatherBox.addEventListener('mouseenter', () => {
             gsap.to(weatherBox, {
                 duration: 0.2,
                 y: -20,
                 ease: "bounce.out"
             });
-
-        //Check for condition
-        if (box.getAttribute('data-condition') === 'Clear') {
-            const icon = box.querySelector('img');
-            gsap.to(icon, {
-                duration: 2,
-                rotation: 360,
-                repeat: -1,
-                ease: "linear"
-            });
-        }
-        else if (box.getAttribute('data-condition') === 'Clouds') {
-            const icon = box.querySelector('img');
-            gsap.to(icon, {
-                duration: 0.5,
-                y: -20,
-                repeat: -1,
-                yoyo: true,
-                ease: "power1.inOut"
-            });                    
-        }
-        else if (box.getAttribute('data-condition') === 'Rain') {
-            const icon = box.querySelector('img');
-            gsap.to(icon, {
-                duration: 0.5,
-                ease: "power1.inOut",
-                scale: 1.2,
-                repeat: -1,
-                yoyo: true
-            });                   
-        }
-        else if (box.getAttribute('data-condition') === 'Snow') {
-            const icon = box.querySelector('img');
-            gsap.to(icon, {
-                duration: 0.5,
-                ease: "power1.inOut",
-                scaleY: 1.25,
-                scale: 0.8, 
-                repeat: -1,
-                yoyo: true 
-            });                  
-        }
-        else if (box.getAttribute('data-condition') === 'Tornado') {
-            const icon = box.querySelector('img');
-            gsap.fromTo(icon, 
-                { x: -5 },
-                { 
-                    x: 5,
+    
+            //Check for condition
+            if (weatherBox.getAttribute('data-condition') === 'Clear') {
+                gsap.to(icon, {
+                    duration: 2,
+                    rotation: 360,
+                    repeat: -1,
+                    ease: "linear"
+                });
+            } else if (weatherBox.getAttribute('data-condition') === 'Clouds') {
+                gsap.to(icon, {
                     duration: 0.5,
+                    y: -20,
                     repeat: -1,
                     yoyo: true,
                     ease: "power1.inOut"
-                }
-            );    
-        }      
+                });
+            } else if (weatherBox.getAttribute('data-condition') === 'Rain') {
+                gsap.to(icon, {
+                    duration: 0.5,
+                    ease: "power1.inOut",
+                    scale: 1.2,
+                    repeat: -1,
+                    yoyo: true
+                });
+            } else if (weatherBox.getAttribute('data-condition') === 'Snow') {
+                gsap.to(icon, {
+                    duration: 0.5,
+                    ease: "power1.inOut",
+                    scaleY: 1.25,
+                    scale: 0.8,
+                    repeat: -1,
+                    yoyo: true
+                });
+            } else if (weatherBox.getAttribute('data-condition') === 'Tornado') {
+                gsap.fromTo(icon, 
+                    { x: -5 },
+                    { 
+                        x: 5,
+                        duration: 0.5,
+                        repeat: -1,
+                        yoyo: true,
+                        ease: "power1.inOut"
+                    }
+                );
+            }
         });
-
+    
         // Remove hover effects on mouse leave
         weatherBox.addEventListener('mouseleave', () => {
             gsap.to(weatherBox, {
@@ -98,7 +90,7 @@ class Weather {
                 y: 0,
                 ease: "bounce.out"
             });
-
+    
             gsap.killTweensOf(icon);
             gsap.to(icon, {
                 duration: 0,
@@ -108,10 +100,10 @@ class Weather {
                 scale: 1
             });
         });
-    }
+    }    
 }
 
-//Fetch
+//Fetch data
 function fetchWeatherData() {
     return fetch('weather.json')
         .then(response => response.json())
@@ -122,9 +114,10 @@ function fetchWeatherData() {
 function createWeatherBoxes(data) {
     const weatherContainer = document.getElementById('container');
 
+    //Loop through the data
     data.forEach(cityWeather => {
         const weather = new Weather(cityWeather.condition, cityWeather.icon);
-        const weatherBox = weather.createWeatherBox();
+        const weatherBox = weather.WeatherBox();
         weather.HoverEffects(weatherBox);
         weatherContainer.appendChild(weatherBox);
     });
