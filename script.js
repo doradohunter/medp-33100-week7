@@ -1,18 +1,17 @@
 /*fetch data from json file*/
-function getData(){
+function getData() {
     fetch('characters.json')
-        .then((response)=>{
+        .then((response) => {
             return response.json();
         })
-        .then ((data)=>{
-            console.log(data)
+        .then((data) => {
             const collection = document.querySelector('.collection');
             for (let i = 0; i < data.length; i++) {
                 const element = document.createElement('div');
                 collection.appendChild(element);
-                const character = new Character (element, data[i].icon, data[i].name, data[i].rarity, data[i].vision, data[i].weapon, data[i].nation);
+                const character = new Character(element, data[i].icon, data[i].name, data[i].rarity, data[i].vision, data[i].weapon, data[i].nation);
                 character.showCharacter();
-            } 
+            }
         })
 }
 
@@ -20,8 +19,8 @@ getData();
 
 
 /*Class for Character*/
-class Character{
-    constructor(element, icon, name, rarity, vision, weapon, nation){
+class Character {
+    constructor(element, icon, name, rarity, vision, weapon, nation) {
         this.element = element;
         this.icon = icon;
         this.name = name;
@@ -32,10 +31,9 @@ class Character{
 
         this.element.classList.add('character');
 
-        
     }
 
-    showCharacter(){
+    showCharacter() {
         this.element.innerHTML = '';
 
         const iconElement = document.createElement('img');
@@ -65,16 +63,16 @@ class Character{
         if (this.name == 'Neuvillette' || this.name == 'Traveler (Lumine/Aether)') {
             visionElement.innerText = 'Element: ' + this.vision;
         } else {
-            visionElement.innerText = 'Vision: ' + this.vision; 
+            visionElement.innerText = 'Vision: ' + this.vision;
         }
-    
+
         const weaponElement = document.createElement('p');
         weaponElement.classList.add('weapon');
         weaponElement.innerText = 'Weapon: ' + this.weapon;
 
         const nationElement = document.createElement('p');
         nationElement.classList.add('nation');
-        nationElement.innerText =  'Nation: ' + this.nation;
+        nationElement.innerText = 'Nation: ' + this.nation;
 
         switch (this.vision) {
             case 'Geo':
@@ -110,6 +108,4 @@ class Character{
         this.element.appendChild(nationElement);
     };
 };
-
-
 //const test = new Character (element1, 'test-image.jpg', 'Lottie', 5, 'Hydro', 'Claymore', 'Fontaine');

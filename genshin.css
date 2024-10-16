@@ -1,15 +1,16 @@
-body{
+body {
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 50px 200px;
 }
+
 .collection {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 50px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 25px;
     width: 100%;
 }
 
@@ -20,49 +21,50 @@ body{
     width: 50%;
 }
 
-.title{
+.title {
     text-align: center;
     font-style: oblique;
 }
 
-.character{
+.character {
     background-color: lightgrey;
     padding: 15px;
     width: 250px;
+    height: 415px;
 }
 
-.name{
+.name {
     font-size: 24px;
     font-weight: bold;
 }
 
 /*class for each element/vision*/
-.anemo{
+.anemo {
     background-color: #63BAAD;
 }
 
-.geo{
+.geo {
     background-color: goldenrod;
 }
 
-.electro{
+.electro {
     background-color: #8142bb;
     color: white;
 }
 
-.dendro{
+.dendro {
     background-color: #aae273;
 }
 
-.hydro{
+.hydro {
     background-color: #1e90ff;
 }
 
-.pyro{
+.pyro {
     background-color: #B22222;
     color: white;
 }
 
-.cryo{
+.cryo {
     background-color: #B0C4DE;
 }
