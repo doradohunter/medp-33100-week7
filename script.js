@@ -32,7 +32,7 @@ class Weather {
         weatherBox.addEventListener('mouseenter', () => {
             gsap.to(weatherBox, {
                 duration: 0.2,
-                y: -20,
+                y: -15,
                 ease: "bounce.out"
             });
     
@@ -44,15 +44,17 @@ class Weather {
                     repeat: -1,
                     ease: "linear"
                 });
-            } else if (weatherBox.getAttribute('data-condition') === 'Clouds') {
+            } 
+            else if (weatherBox.getAttribute('data-condition') === 'Clouds') {
                 gsap.to(icon, {
                     duration: 0.5,
-                    y: -20,
+                    y: -15,
                     repeat: -1,
                     yoyo: true,
                     ease: "power1.inOut"
                 });
-            } else if (weatherBox.getAttribute('data-condition') === 'Rain') {
+            } 
+            else if (weatherBox.getAttribute('data-condition') === 'Rain') {
                 gsap.to(icon, {
                     duration: 0.5,
                     ease: "power1.inOut",
@@ -60,7 +62,8 @@ class Weather {
                     repeat: -1,
                     yoyo: true
                 });
-            } else if (weatherBox.getAttribute('data-condition') === 'Snow') {
+            } 
+            else if (weatherBox.getAttribute('data-condition') === 'Snow') {
                 gsap.to(icon, {
                     duration: 0.5,
                     ease: "power1.inOut",
@@ -69,7 +72,8 @@ class Weather {
                     repeat: -1,
                     yoyo: true
                 });
-            } else if (weatherBox.getAttribute('data-condition') === 'Tornado') {
+            } 
+            else if (weatherBox.getAttribute('data-condition') === 'Tornado') {
                 gsap.fromTo(icon, 
                     { x: -5 },
                     { 
@@ -135,6 +139,7 @@ function createWeatherBoxes(data) {
     });
 }
 
+//Call the function
 fetchWeatherData().then(data => {
     createWeatherBoxes(data);
 });
