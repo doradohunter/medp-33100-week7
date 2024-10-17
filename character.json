@@ -1,0 +1,432 @@
+[
+  {
+    "name": "Albedo",
+    "vision": "Geo",
+    "description": "A genius known as the Kreideprinz, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius."
+  },
+  {
+    "name": "Alhaitham",
+    "vision": "Dendro",
+    "description": "The current scribe of the Sumeru Akademiya, a man endowed with extraodinary intelligence and talent. He lives free — free from the searching eyes of ordinary people, anyway."
+  },
+  {
+    "name": "Amber",
+    "vision": "Pyro",
+    "description": "Always energetic and full of life, Amber's the best - albeit only - Outrider of the Knights of Favonius."
+  },
+  {
+    "name": "Arataki Itto",
+    "vision": "Geo",
+    "description": "The first and greatest head of the Arataki Gang, famed throughout Inazuma City's Hanamizaka... Wait, what? You've never heard of them? Are you trying to be funny here?"
+  },
+  {
+    "name": "Arlecchino",
+    "vision": "Pyro",
+    "description": "\"The Knave,\" Fourth of the Fatui Harbingers. A poised, ruthless diplomat. To the children in the House of the Hearth, she is their feared yet dependable \"Father.\""
+  },
+  {
+    "name": "Kamisato Ayaka",
+    "vision": "Cryo",
+    "description": "Daughter of the Yashiro Commission's Kamisato Clan. Dignified and elegant, as well as wise and strong."
+  },
+  {
+    "name": "Kamisato Ayato",
+    "vision": "Hydro",
+    "description": "The young but highly accomplished head of the Yashiro Commisson's Kamisato Clan. Cultured and polite, he is a man of many ways and means."
+  },
+  {
+    "name": "Baizhu",
+    "vision": "Dendro",
+    "birthday": "0000-04-25",
+    "description": "The owner of Bubu Pharmacy, who is rarely seen without the white snake named Changsheng. His medicinal knowledge is encyclopedic, and his personal intrigues subtle."
+  },
+  {
+    "name": "Barbara",
+    "vision": "Hydro",
+    "description": "Every denizen of Mondstadt adores Barbara. However, she learned the word \"idol\" from a magazine."
+  },
+  {
+    "name": "Beidou",
+    "vision": "Electro",
+    "description": "Captain of her crew, The Crux. She's quite an unbound and forthright woman."
+  },
+  {
+    "name": "Bennett", 
+    "vision": "Pyro",
+    "description": "A righteous and good-natured adventurer from Mondstadt who's unfortunately extremely unlucky."
+  },
+  {
+    "name": "Candace",
+    "vision": "Hydro",
+    "description": "A descendant of King Deshret with an amber left eye. The defender of Aaru Village."
+  },
+  {
+    "name": "Charlotte",
+    "vision": "Cryo","description": "Indefatigable reporter of The Steambird, constantly on the hunt for the \"truth.\""
+  },
+  {
+    "name": "Chevreuse",
+    "vision": "Pyro",
+    "description": "The captain of the Special Security and Surveillance Patrol, who wears justice as an ever-present seal upon her heart. Her musket shall only ever point at the guilty."
+  },
+  {
+    "name": "Chiori",
+    "vision": "Geo",
+    "description": "The owner of Chioriya Boutique. A tailor renowned throughout Fontaine."
+  },
+  {
+    "name": "Chongyun",
+    "vision": "Cryo",
+    "description": "A young exorcist from a family of exorcists. He does everything he can to suppress his abundance of yang energy."
+  },
+  {
+    "name": "Clorinde",
+    "vision": "Electro",
+    "description": "An undefeated Champion Duelist. Sword in hand, she defends justice in the Court of Fontaine."
+  },
+  {
+    "name": "Collei",
+    "vision": "Dendro",
+    "description": "Oh, you're going to Sumeru? Can you give my regards to Collei? Well... it's been so long, I wonder if her hair has grown out and if she's taller?\n— Amber"
+  },
+  {
+    "name": "Cyno",
+    "vision": "Electro",
+    "description": "The General Mahamatra of the Akademiya, leader of all the Matras. He has a unique sense of humor that never fails to leave a deep impression."
+  },
+  {
+    "name": "Dehya",
+    "vision": "Pyro",
+    "description": "A member of the Eremites, a mercenary organization that roams the sands of Sumeru. Valiant and powerful, she enjoys great fame amongst her fellow Eremites."
+  },
+  {
+    "name": "Diluc",
+    "vision": "Pyro",
+    "description": "The tycoon of a winery empire in Mondstadt, unmatched in every possible way."
+  },
+  {
+    "name": "Diona",
+    "vision": "Cryo",
+    "description": "A young lady who has inherited trace amounts of non-human blood. She is the incredibly popular bartender of the Cat's Tail tavern."
+  },
+  {
+    "name": "Dori",
+    "vision": "Electro",
+    "description": "An elusive merchant who has a fondness for glittering Mora."
+  },
+  {
+    "name": "Emilie",
+    "vision": "Dendro",
+    "description": "A Fontainian perfumer, one who bottles secrets."
+  },
+  {
+    "name": "Eula",
+    "vision": "Cryo",
+    "description": "The Spindrift Knight, a scion of the old aristocracy, and the Captain of the Knights of Favonius Reconnaissance Company. The reason for which a descendant of the ancient nobles might join the Knights remains a great mystery in Mondstadt to this very day."
+  },
+  {
+    "name": "Faruzan",
+    "vision": "Anemo",
+    "description": "A researcher from 'one hundred years ago'. She enjoys self-identifying as everyone's senior, and has significant knowledge of ancient scripts and machines of all kinds."
+  },
+  {
+    "name": "Fischl",
+    "vision": "Electro",
+     "description": "A mysterious girl who calls herself \"Prinzessin der Verurteilung\" and travels with a night raven named Oz."
+  },
+  {
+    "name": "Freminet",
+    "vision": "Cryo",
+    "description": "A reserved young man who is well-versed in diving. Beneath his distant, icy demeanor lies a pure heart bereft of all flaws."
+  },
+  {
+    "name": "Furina",
+    "vision": "Hydro",
+    "description": "The absolute focus of the stage of judgment, until the final applause sounds."
+  },
+  {
+    "name": "Gaming",
+    "vision": "Pyro",
+    "description": "Guard of the Sword and Strongbox Secure Transport Agency, and the head of the \"Mighty Mythical Beasts\" Wushou troupe."
+  },
+  {
+    "name": "Ganyu",
+    "vision": "Cryo",
+    "description": "The secretary at Yuehai Pavilion. The blood of the qilin, an illuminated beast, flows within her veins."
+  },
+  {
+    "name": "Gorou",
+    "vision": "Geo",
+    "description": "The great general of Watatsumi Island's forces. He is deeply trusted by his subordinates."
+  },
+  {
+    "name": "Hu Tao",
+    "vision": "Pyro",
+    "description": "The 77th Director of the Wangsheng Funeral Parlor. She took over the business at a rather young age."
+  },
+  {
+    "name": "Jean",
+    "vision": "Anemo",
+    "description": "The righteous and rigorous Dandelion Knight, and Acting Grand Master of Mondstadt's Knights of Favonius"
+  },
+  {
+    "name": "Kachina",
+    "vision": "Geo",
+    "description": "Bearing the Ancient Name of \"Uthabiti\", Kachina is a young warrior belonging to the Children of Echoes who is determined to become strong in spite of the numerous failures she has experienced."
+  },
+  {
+    "name": "Kaeya",
+    "vision": "Cryo",
+    "description": "An accomplished swordsman and a strategic thinker in the Knights of Favonius, rumored to hail from beyond Mondstadt."
+  },
+  {
+    "name": "Kaveh",
+    "vision": "Dendro",
+    "description": "A renowned architect from Sumeru who perhaps cares a bit too much about too many things. He is an aesthete troubled by reality."
+  },
+  {
+    "name": "Kaedehara Kazuha",
+    "vision": "Anemo",
+    "description": "If one's heart is empty, all under heaven is empty. But if one's heart is pure, all under heaven is pure."
+  },
+  {
+    "name": "Keqing",
+    "vision": "Electro",
+    "description": "The Yuheng of the Liyue Qixing. Has much to say about Rex Lapis' unilateral approach to policymaking in Liyue - but in truth, gods admire skeptics such as her quite a lot."
+  },
+  {
+    "name": "Kinich",
+    "vision": "Dendro",
+    "description": "He is the representative of the Scions of the Canopy and is accompanied by the self-proclaimed \"Almighty Dragonlord\" K'uhul Ajaw."
+  },
+  {
+    "name": "Kirara",
+    "vision": "Dendro",
+    "description": "A courier for Komaniya Express, a delivery company in Inazuma. A nekomata who loves her job and human society."
+  },
+  {
+    "name": "Klee",
+    "vision": "Pyro",
+    "description": "An explosives expert and a regular at the Knights of Favonius' confinement room. Also known as Fleeing Sunlight."
+  },
+  {
+    "name": "Sangonomiya Kokomi",
+    "vision": "Hydro",
+    "description": "The Divine Priestess of Watatsumi Island. All of the island's affairs are at this young lady's fingertips."
+  },
+  {
+    "name": "Kuki Shinobu",
+    "vision": "Electro",
+    "description": "The capable and reliable deputy leader of the \"Arataki Gang.\" Please note: capable and reliable are not appellations for the \"Arataki Gang,\" but for their deputy leader in specific."
+  },
+  {
+    "name": "Layla",
+    "vision": "Cryo",
+    "description": "A Rtawahist student who specializes in Theoretical Astrology. Heavily prone to somnambulism and locked in a grinding war with sleep deprivation, the problem of restful slumber is a most troubling one to her."
+  },
+  {
+    "name": "Lisa",
+    "vision": "Electro",
+    "description": "The languid but knowledgeable Librarian of the Knights of Favonius who was deemed by Sumeru Academia to be their most distinguished graduate in the past two centuries."
+  },
+  {
+    "name": "Lynette",
+    "vision": "Anemo",
+    "description": "A magic assistant of few words, her emotions are as inscrutable as any cat's."
+  },
+  {
+    "name": "Lyney",
+    "vision": "Pyro",
+    "description": "A famed Fontainian magician who possesses great stage presence as well as gift of the gab. Audiences are enthralled by his exquisite skills, and they hang on to his every clever word."
+  },
+  {
+    "name": "Mika",
+    "vision": "Cryo",
+    "description": "A young knight born to an ordinary family. He serves as a Front-Line Surveyor in his Company. He is a low-key and cautious character."
+  },
+  {
+    "name": "Mona",
+    "vision": "Hydro",
+    "description": "A mysterious young astrologer who proclaims herself to be \"Astrologist Mona Megistus,\" and who possesses abilities to match the title. Erudite, but prideful."
+  },
+  {
+    "name": "Mualani",
+    "vision": "Hydro",
+    "description": "Being a guide, a surfer, and a watersports shop owner for the People of the Springs, Mualani is an active and sweet person, who is always able to satisfy her clients."
+  },
+  {
+    "name": "Nahida",
+    "vision": "Dendro",
+    "description": "A caged bird secluded within the confines of the Sanctuary of Surasthana who can only see the world in her dreams."
+  },
+  {
+    "name": "Navia",
+    "vision": "Geo",
+    "description": "The current President of Spina di Rosula, who is lovely, dutiful, and a great boss."
+  },
+  {
+    "name": "Neuvillette",
+    "vision": "Hydro",
+    "description": "The Chief Justice of Fontaine, known as the Iudex, is renowned for his unassailable impartiality."
+  },
+  {
+    "name": "Nilou",
+    "vision": "Hydro",
+    "description": "The star of the Zubayr Theater. She is full of warmth and innocence, and her dances are lively and elegant."
+  },
+  {
+    "name": "Ningguang",
+    "vision": "Geo",
+    "description": "The Tianquan of Liyue Qixing. Her wealth is unsurpassed in all of Teyvat."
+  },
+  {
+    "name": "Noelle",
+    "vision": "Geo",
+    "description": "A maid who faithfully serves the Knights of Favonius that dreams of joining their ranks someday."
+  },
+  {
+    "name": "Qiqi",
+    "vision": "Cryo",
+    "description": "An apprentice and herb gatherer at Bubu Pharmacy. An undead with a bone-white complexion, she seldom has much in the way of words or emotion."
+  },
+  {
+    "name": "Raiden Shogun",
+    "vision": "Electro",
+    "description": "Her Excellency, the Almighty, Narukami Ogosho, who promised the people of Inazuma an unchanging Eternity."
+  },
+  {
+    "name": "Razor",
+    "vision": "Electro",
+    "description": "A boy who lives among the wolves in Wolvendom of Mondstadt, away from human civilization. As agile as lightning."
+  },
+  {
+    "name": "Rosaria",
+    "vision": "Cryo",
+    "description": "A sister of the church, though you wouldn't know it if it weren't for her attire. Known for her sharp, cold words and manner, she often works alone."
+  },
+  {
+    "name": "Kujou Sara",
+    "vision": "Electro",
+    "description": "A general of the Tenryou Commission. Bold, decisive, and skilled in battle."
+  },
+  {
+    "name": "Sayu",
+    "vision": "Anemo",
+    "description": "A pint-sized ninja attached to the Shuumatsuban, who always seems to be lacking sleep."
+  },
+  {
+    "name": "Sethos",
+    "vision": "Electro",
+    "description": "The Temple of Silence's heir. Burdened with secrets, he comes from the sands."
+  },
+  {
+    "name": "Shenhe",
+    "vision": "Cryo",
+    "description": "An adepti disciple with a most unusual air about her. Having spent much time cultivating in isolation in Liyue's mountains, she has become every bit as cool and distant as the adepti themselves."
+  },
+  {
+    "name": "Shikanoin Heizou",
+    "vision": "Anemo",
+    "description": "A young prodigy detective from the Tenryou Commission. His senses are sharp and his thoughts are clear."
+  },
+  {
+    "name": "Sigewinne",
+    "vision": "Hydro",
+    "description": "A Melusine and the Fortress of Meropide's head nurse. She cares equally for every convict locked in the undersea prison."
+  },
+  {
+    "name": "Sucrose",
+    "vision": "Anemo",
+    "description": "An alchemist filled with curiosity about all things. She researches bio-alchemy."
+  },
+  {
+    "name": "Tartaglia",
+    "vision": "Hydro",
+    "description": "No. 11 of The Harbingers, also known as \"Childe\". His name is highly feared on the battlefield."
+  },
+  {
+    "name": "Thoma",
+    "vision": "Pyro",
+    "description": "The housekeeper of the Yashiro Commission's Kamisato Clan, and a well-known \"fixer\" in Inazuma.\nFriendly and approachable, Thoma fits in with the crowd easily wherever he is.\nAt first glance, he seems to be a very easygoing person, but he is in fact very responsible. He has an extraordinarily serious side, be it in his work or his interpersonal communications."
+  },
+  {
+    "name": "Tighnari",
+    "vision": "Dendro",
+    "description": "\"A message for you. I brought back a specialty from the desert, two packs of honeyed dates, which helps to replenish your energy, whether in the morning or at night. Thank you for your patience in teaching and taking care of Collei. Good luck with your work and best wishes for Collei's studies.\"\n—An anonymously written message left inside a candy box, placed on the watcher's table."
+  },
+  {
+    "name": "Venti",
+    "vision": "Anemo",
+    "description": "One of the many bards of Mondstadt, who freely wanders the city's streets and alleys."
+  },
+  {
+    "name": "Wanderer",
+    "vision": "Anemo",
+     "description": "A wayfaring figure whose identity is a mystery. He dresses like a mountain ascetic, but he certainly does not act the part."
+  },
+  {
+    "name": "Wriothesley",
+    "vision": "Cryo",
+    "description": "Duke of the Fortress of Meropide, Lord Incognito of the murky depths."
+  },
+  {
+    "name": "Xiangling",
+    "vision": "Pyro",
+    "description": "A renowned chef from Liyue. She's extremely passionate about cooking and excels at making her signature hot and spicy dishes."
+  },
+  {
+    "name": "Xianyun",
+    "vision": "Anemo",
+    "description": "One of the Mighty and Illuminated Adepti of Jueyun, known as \"Cloud Retainer.\" Expert in all kinds of mechanical contraptions, her heart now turns towards the affairs of the mortal world, through which she walks under the name \"Xianyun.\""
+  },
+  {
+    "name": "Xiao",
+    "vision": "Anemo",
+    "description": "A yaksha adeptus that defends Liyue. Also heralded as the \"Conqueror of Demons\" and \"Vigilant Yaksha.\""
+  },
+  {
+    "name": "Xingqiu",
+    "vision": "Hydro",
+    "description": "A young man carrying a longsword who is frequently seen at book booths. He has a chivalrous heart and yearns for justice and fairness for all."
+  },
+  {
+    "name": "Xinyan",
+    "vision": "Pyro",
+    "description": "Liyue's sole rock 'n' roll musician. She rebels against ossified prejudices using her music and passionate singing."
+  },
+  {
+    "name": "Yae Miko",
+    "vision": "Electro",
+    "description": "Lady Guuji of the Grand Narukami Shrine. Also serves as the editor-in-chief of Yae Publishing House. Unimaginable intelligence and cunning are hidden under her beautiful appearance."
+  },
+  {
+    "name": "Yanfei",
+    "vision": "Pyro",
+    "description": "A well-known legal adviser active in Liyue Harbor. A brilliant young lady in whose veins runs the blood of an illuminated beast."
+  },
+  {
+    "name": "Yaoyao",
+    "vision": "Dendro",
+    "description": "Streetward Rambler's youngest disciple. A gentle and caring “little adult.”"
+  },
+  {
+    "name": "Yelan",
+    "vision": "Hydro",
+    "description": "A mysterious person who claims to work for the Ministry of Civil Affairs, but is a \"non-entity\" on the Ministry of Civil Affairs' list."
+  },
+  {
+    "name": "Yoimiya",
+    "vision": "Pyro",
+    "description": "Owner of Naganohara Fireworks. Known as the \"Queen of the Summer Festival,\" she excels in her craft of creating fireworks that symbolize people's hopes and dreams."
+  },
+  {
+    "name": "Yun Jin",
+    "vision": "Geo",
+    "description": "A renowned Liyue opera singer who is skilled in both playwriting and singing. Her style is one-of-a-kind, exquisite and delicate, much like the person herself."
+  },
+  {
+    "name": "Zhongli",
+    "vision": "Geo",
+    "description": "A mysterious expert contracted by the Wangsheng Funeral Parlor. Extremely knowledgeable in all things."
+  }
+]

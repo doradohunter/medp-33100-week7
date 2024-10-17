@@ -1,0 +1,83 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+body {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.characters-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(129, 133, 138);
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 12px;
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    /* Add shadow effect */
+    box-shadow: 0 4px 8px rgb(155, 232, 253), 0 6px 20px rgba(185, 254, 251, 0.888);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 12px 40px rgba(0, 0, 0, 0.489);
+}
+
+.anemo {
+    background-color: rgb(143, 242, 168);
+}
+
+.pyro {
+    background-color: rgb(255, 152, 152);
+}
+
+.cryo {
+    background-color: rgb(139, 226, 255);
+}
+
+.dendro {
+    background-color: rgb(91, 192, 60);
+}
+
+.geo {  
+    background-color: rgb(255, 221, 111);
+}
+
+.electro {
+    background-color: rgb(225, 154, 255);
+}
+
+.hydro {
+    background-color: rgb(106, 148, 255);
+}
+
+.char_name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.char_vision, .char_description {
+    margin-top: 5px;
+}
