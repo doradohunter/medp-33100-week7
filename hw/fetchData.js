@@ -1,15 +1,23 @@
 class Character{
-    constructor(element, name, house, wizard){
+    constructor(element, name, house, wizard, imgURL){
         this.element = element;
         this.name = name;
         this.house = house;
         this.wizard = wizard;
-
-        
+        this.imgURL = imgURL;
     }
 
     createCharacter(){
         this.innerHTML = '';
+
+        const imgElement = document.createElement('img');
+        imgElement.src = this.imgURL;
+        imgElement.alt = this.name;
+        imgElement.style.width = '150px';
+        imgElement.style.height = 'auto';
+        imgElement.style.marginRight = '20px';
+
+        const text = document.createElement('div');
 
         const nameElement = document.createElement('p');
         nameElement.classList.add('character_name');
@@ -23,10 +31,12 @@ class Character{
         wizardElement.classList.add('character_wizard');
         wizardElement.innerText = 'Is A Wizard: '+ this.wizard;
 
-        this.element.appendChild(nameElement);
-        this.element.appendChild(houseElement);
-        this.element.appendChild(wizardElement);
+        text.appendChild(nameElement);
+        text.appendChild(houseElement);
+        text.appendChild(wizardElement);
 
+        this.element.appendChild(imgElement);
+        this.element.appendChild(text);
     }
 }
 
@@ -47,7 +57,7 @@ fetchCharacterData()
         for(let i = 0; i < 30; i++){
             const characterEl = document.createElement('div');
             characterEl.classList.add('character');
-            const character = new Character(characterEl, data[i].name, data[i].house, data[i].wizard);
+            const character = new Character(characterEl, data[i].name, data[i].house, data[i].wizard, data[i].image);
             character.createCharacter();
             characters.appendChild(characterEl);
         }
