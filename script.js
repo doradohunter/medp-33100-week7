@@ -29,7 +29,7 @@ class Character {
         this.weapon = weapon;
         this.nation = nation;
 
-        this.element.classList.add('character');
+        this.element.classList.add('character', this.vision);
 
     }
 
@@ -73,32 +73,6 @@ class Character {
         const nationElement = document.createElement('p');
         nationElement.classList.add('nation');
         nationElement.innerText = 'Nation: ' + this.nation;
-
-        switch (this.vision) {
-            case 'Geo':
-                this.element.classList.add('geo');
-                break;
-            case 'Anemo':
-                this.element.classList.add('anemo');
-                break;
-            case 'Pyro':
-                this.element.classList.add('pyro');
-                break;
-            case 'Cryo':
-                this.element.classList.add('cryo');
-                break;
-            case 'Electro':
-                this.element.classList.add('electro');
-                break;
-            case 'Dendro':
-                this.element.classList.add('dendro');
-                break;
-            case 'Hydro':
-                this.element.classList.add('hydro');
-                break;
-            default:
-                break;
-        }
 
         this.element.appendChild(iconElement);
         this.element.appendChild(nameElement);

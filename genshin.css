@@ -39,32 +39,32 @@ body {
 }
 
 /*class for each element/vision*/
-.anemo {
+.Anemo {
     background-color: #63BAAD;
 }
 
-.geo {
+.Geo {
     background-color: goldenrod;
 }
 
-.electro {
+.Electro {
     background-color: #8142bb;
     color: white;
 }
 
-.dendro {
+.Dendro {
     background-color: #aae273;
 }
 
-.hydro {
+.Hydro {
     background-color: #1e90ff;
 }
 
-.pyro {
+.Pyro {
     background-color: #B22222;
     color: white;
 }
 
-.cryo {
+.Cryo {
     background-color: #B0C4DE;
 }
