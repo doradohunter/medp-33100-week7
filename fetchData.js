@@ -54,7 +54,7 @@ fetchCharacterData()
     .then((data) =>{
         const characters = document.querySelector('.characters');
 
-        for(let i = 0; i < 30; i++){
+        for(let i = 0; i < data.length; i++){
             const characterEl = document.createElement('div');
             characterEl.classList.add('character');
             const character = new Character(characterEl, data[i].name, data[i].house, data[i].wizard, data[i].image);

@@ -2,11 +2,13 @@
 
 body{
   font-family: "Bona Nova", serif;
+  background-color: #001d3d;
 }
 
 h1{
     text-align: center;
     font-size: 3em;
+    color: white;
 }
 
 p{
@@ -22,7 +24,7 @@ p{
 
 .character{
     display: flex;
-    background-color: pink;
+    background-color: white;
     margin: 10px;
     border-radius: 20px;
     flex: 1 1 calc(25% - 20px);
