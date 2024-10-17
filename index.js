@@ -59,7 +59,6 @@ function displayJoke() {
       }
     });
 
-    // Set up GSAP animation after jokes are loaded
     setupGSAPAnimation();
   });
 }
@@ -97,22 +96,15 @@ function setupGSAPAnimation() {
     goToJoke(prevIndex);
   }
 
-  // Create and append navigation buttons
-  const navContainer = document.createElement('div');
-  navContainer.className = 'joke-nav';
+  function ifClickButton() {
+    const prevButton = document.querySelector('.previous');
+    const nextButton = document.querySelector('.next');
 
-  const prevButton = document.createElement('button');
-  prevButton.textContent = 'Previous';
-  prevButton.addEventListener('click', prevJoke);
+    prevButton.addEventListener('click', prevJoke);
+    nextButton.addEventListener('click', nextJoke);
+  }
 
-  const nextButton = document.createElement('button');
-  nextButton.textContent = 'Next';
-  nextButton.addEventListener('click', nextJoke);
-
-  navContainer.appendChild(prevButton);
-  navContainer.appendChild(nextButton);
-
-  document.body.appendChild(navContainer);
+  ifClickButton();
 }
 
 displayJoke();
