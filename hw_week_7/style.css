@@ -1,0 +1,23 @@
+@font-face {
+    font-family: digiFont;
+    src: url(PixelDigivolve-mOm9.ttf);
+}
+
+.library {
+    font-family: digiFont;
+    list-style-type: none;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+
+    flex-direction: column;
+    background-size: cover;
+    
+}
+
+h1 {
+    font-family: digiFont;
+}
