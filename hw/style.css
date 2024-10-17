@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+.characters{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.character{
+    background-color: pink;
+    margin: 5%;
+    border-radius: 20px;
+    width: 20%;
+    padding: 30px;
+}
